@@ -3,56 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GenZ Web Technologies</title>
+  <title>Vivek Shaw</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; }
-    header { background: #0d6efd; color: #fff; padding: 60px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { font-size: 1.2em; margin-top: 10px; }
-    .button { background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
-    section { padding: 50px 20px; text-align: center; }
-    section h2 { font-size: 2em; margin-bottom: 20px; color: #0d6efd; }
-    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-    .service-card { background: #fff; padding: 20px; border-radius: 10px; width: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    .service-card h3 { color: #333; margin-bottom: 10px; }
-    footer { background: #333; color: #fff; padding: 30px 20px; text-align: center; }
-    @media (max-width: 600px) { .services { flex-direction: column; align-items: center; } }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #333; }
+    
+    /* Header */
+    header { background: #0d6efd; color: #fff; padding: 20px 20px; position: sticky; top: 0; z-index: 1000; }
+    .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+    .logo { font-size: 1.8em; font-weight: bold; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .cta-button { background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-left: 20px; }
+    
+    /* Hero Section */
+    .hero { 
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 70vh; 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      text-align: center; 
+      color: #fff; 
+      padding: 0 20px;
+    }
+    .hero h1 { font-size: 3em; margin: 0; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);}
+    .hero p { font-size: 1.2em; margin-top: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);}
+    .hero a { margin-top: 20px; background: #28a745; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; }
+    
+    /* About Section */
+    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+    section h2 { font-size: 2em; color: #0d6efd; margin-bottom: 20px; text-align: center; }
+    section p { font-size: 1.1em; line-height: 1.6; text-align: center; }
+    
+    /* Footer */
+    footer { background: #333; color: white; padding: 30px 20px; text-align: center; }
+    footer a { color: #28a745; text-decoration: none; font-weight: bold; }
+    
+    /* Responsive */
+    @media (max-width: 768px){
+      .nav-container { flex-direction: column; }
+      nav { margin-top: 10px; }
+    }
   </style>
 </head>
 <body>
 
+<!-- Header -->
 <header>
-  <h1>GenZ Web Technologies</h1>
-  <p>Building Smart Websites & Digital Solutions for Your Business</p>
-  <a href="mailto:contact@genzweb.com" class="button">Contact Us</a>
+  <div class="nav-container">
+    <div class="logo">Vivek Shaw</div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="mailto:vivekshaw@example.com" class="cta-button">Email Me</a>
+    </nav>
+  </div>
 </header>
 
-<section>
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>Web Development</h3>
-      <p>Responsive, modern websites for your brand.</p>
-    </div>
-    <div class="service-card">
-      <h3>Digital Marketing</h3>
-      <p>Grow your business with SEO, Ads & Social Media.</p>
-    </div>
-    <div class="service-card">
-      <h3>Branding</h3>
-      <p>Create a strong identity for your company.</p>
-    </div>
-  </div>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Hello, I'm Vivek Shaw</h1>
+  <p>Digital Marketer & Web Enthusiast | Building Smart Solutions</p>
+  <a href="mailto:vivekshaw@example.com">Get in Touch</a>
 </section>
 
-<section>
-  <h2>Get in Touch</h2>
-  <p>We are ready to build your dream website today.</p>
-  <a href="mailto:contact@genzweb.com" class="button">Email Us</a>
+<!-- About Me Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I'm Vivek Shaw, a passionate digital marketer and web enthusiast with 4+ years of experience helping businesses grow online. I specialize in performance marketing, web development, and creating innovative solutions that make an impact.</p>
 </section>
 
+<!-- Footer -->
 <footer>
-  <p>© 2025 GenZ Web Technologies. All Rights Reserved.</p>
+  <p>© 2025 Vivek Shaw. All Rights Reserved.</p>
+  <p><a href="mailto:vivekshaw@example.com">Email Me</a></p>
 </footer>
 
 </body>
