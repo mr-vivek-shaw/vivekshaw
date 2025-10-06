@@ -8,26 +8,58 @@
     body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
 
     /* Hero Section */
-    .hero { 
+    .hero {
       background: url('https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/Gemini_Generated_Image_b5znt0b5znt0b5zn.png') no-repeat center center/cover;
-      height: 100vh; 
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      text-align: center; 
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
 
     /* About Me Section */
     #about { max-width: 1000px; margin: 50px auto; padding: 0 20px; text-align: center; }
-    #about h2 { font-size: 2em; /* Color harmonized with hero image */ color: #222222; margin-bottom: 20px; }
+    #about h2 { font-size: 2em; color: #222222; margin-bottom: 20px; }
     #about p { font-size: 1.1em; line-height: 1.6; color: #444444; }
 
-    /* EXPERIENCE SECTION */ 
-    
+    /* Contact Section */
+    #contact { max-width: 600px; margin: 50px auto; padding: 0 20px; text-align: center; }
+    #contact h2 { font-size: 2em; color: #222222; margin-bottom: 20px; }
+    #contact a {
+      background: #555555;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    /* Footer */
+    footer { background: #222222; color: white; padding: 30px 20px; text-align: center; }
+    footer a { color: #cccccc; text-decoration: none; font-weight: bold; }
+
+    /* Responsive */
+    @media (max-width: 768px){
+      .hero { height: 60vh; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero"></section>
+
+<!-- About Me Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I'm Vivek Shaw, a passionate digital marketer and web enthusiast with 4+ years of experience helping businesses grow online. I specialize in performance marketing, web development, and creating innovative solutions that make an impact.</p>
+</section>
+
+<!-- ===== EXPERIENCE SECTION START ===== -->
 <section id="experience" style="background-color: #0a0f1a; color: #f5f5f5; padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto; text-align: center;">
     <h2 style="font-size: 2.2em; margin-bottom: 40px; color: #00e1ff;">Experience</h2>
-
     <div style="text-align: left;">
       <h3>Lotus Interworks <span style="float:right; color:#00e1ff;">Jul 2023 - Present</span></h3>
       <p><em>Digital Marketing Account Executive</em></p>
@@ -67,9 +99,9 @@
     </div>
   </div>
 </section>
-/* EXPERIENCE SECTION END */
+<!-- ===== EXPERIENCE SECTION END ===== -->
 
-/* SKILLS SECTION START */
+<!-- ===== SKILLS SECTION START ===== -->
 <section id="skills" style="background-color: #101726; color: #f5f5f5; padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto; text-align: center;">
     <h2 style="font-size: 2.2em; margin-bottom: 40px; color: #00e1ff;">Skills</h2>
@@ -89,14 +121,12 @@
     </div>
   </div>
 </section>
-  
-/* SKILLS SECTION END*/
+<!-- ===== SKILLS SECTION END ===== -->
 
-/* EDUCATION SECTION START */
+<!-- ===== EDUCATION SECTION START ===== -->
 <section id="education" style="background-color: #0a0f1a; color: #f5f5f5; padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto; text-align: center;">
     <h2 style="font-size: 2.2em; margin-bottom: 40px; color: #00e1ff;">Education & Certifications</h2>
-
     <div style="text-align: left;">
       <h3>Bachelor in Computer Application <span style="float:right; color:#00e1ff;">2017 - 2020</span></h3>
       <p><em>Maulana Abul Kalam Azad University of Technology</em></p>
@@ -106,54 +136,18 @@
     </div>
   </div>
 </section>
-/* EDUCATION SECTION END */
-
-    /* Contact Section */
-    #contact { max-width: 600px; margin: 50px auto; padding: 0 20px; text-align: center; }
-    #contact h2 { font-size: 2em; color: #222222; margin-bottom: 20px; }
-    #contact a { 
-      background: #555555; /* Harmonized with hero image tones */
-      color: white; 
-      padding: 12px 25px; 
-      text-decoration: none; 
-      font-weight: bold; 
-      border-radius: 5px; 
-      display: inline-block; 
-    }
-
-    /* Footer */
-    footer { background: #222222; color: white; padding: 30px 20px; text-align: center; }
-    footer a { color: #cccccc; text-decoration: none; font-weight: bold; }
-
-    /* Responsive */
-    @media (max-width: 768px){
-      .hero { height: 60vh; }
-    }
-  </style>
-</head>
-<body>
-
-<!-- Hero Section -->
-<section class="hero">
-  <!-- Hero image only, no text/button -->
-</section>
-
-<!-- About Me Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hi! I'm Vivek Shaw, a passionate digital marketer and web enthusiast with 4+ years of experience helping businesses grow online. I specialize in performance marketing, web development, and creating innovative solutions that make an impact.</p>
-</section>
+<!-- ===== EDUCATION SECTION END ===== -->
 
 <!-- Contact Section -->
 <section id="contact">
   <h2>Contact Me</h2>
-  <a href="mailto:vivekshaw@example.com">Email Me</a>
+  <a href="mailto:vivekshaw1209@gmail.com">Email Me</a>
 </section>
 
 <!-- Footer -->
 <footer>
   <p>© 2025 Vivek Shaw. All Rights Reserved.</p>
-  <p><a href="mailto:vivekshaw@example.com">Email Me</a></p>
+  <p><a href="mailto:vivekshaw1209@gmail.com">Email Me</a></p>
 </footer>
 
 </body>
