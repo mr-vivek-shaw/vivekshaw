@@ -5,30 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GenZ Web Technologies</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #007BFF; color: white; padding: 50px 20px; }
-    h1 { margin: 0; font-size: 2.5em; }
-    p { font-size: 1.2em; }
-    a.button { background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    footer { margin-top: 50px; padding: 20px; background: #333; color: white; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fa; color: #333; }
+    header { background: #0d6efd; color: #fff; padding: 60px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    .button { background: #28a745; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; margin-top: 20px; }
+    section { padding: 50px 20px; text-align: center; }
+    section h2 { font-size: 2em; margin-bottom: 20px; color: #0d6efd; }
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .service-card { background: #fff; padding: 20px; border-radius: 10px; width: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .service-card h3 { color: #333; margin-bottom: 10px; }
+    footer { background: #333; color: #fff; padding: 30px 20px; text-align: center; }
+    @media (max-width: 600px) { .services { flex-direction: column; align-items: center; } }
   </style>
 </head>
 <body>
-  <header>
-    <h1>GenZ Web Technologies</h1>
-    <p>Building Smart Websites for Your Business</p>
-    <a href="mailto:contact@genzweb.com" class="button">Contact Us</a>
-  </header>
 
-  <main>
-    <section>
-      <h2>Our Services</h2>
-      <p>Web Development | Digital Marketing | Branding</p>
-    </section>
-  </main>
+<header>
+  <h1>GenZ Web Technologies</h1>
+  <p>Building Smart Websites & Digital Solutions for Your Business</p>
+  <a href="mailto:contact@genzweb.com" class="button">Contact Us</a>
+</header>
 
-  <footer>
-    <p>© 2025 GenZ Web Technologies. All Rights Reserved.</p>
-  </footer>
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>Responsive, modern websites for your brand.</p>
+    </div>
+    <div class="service-card">
+      <h3>Digital Marketing</h3>
+      <p>Grow your business with SEO, Ads & Social Media.</p>
+    </div>
+    <div class="service-card">
+      <h3>Branding</h3>
+      <p>Create a strong identity for your company.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Get in Touch</h2>
+  <p>We are ready to build your dream website today.</p>
+  <a href="mailto:contact@genzweb.com" class="button">Email Us</a>
+</section>
+
+<footer>
+  <p>© 2025 GenZ Web Technologies. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
