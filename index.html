@@ -6,19 +6,11 @@
   <title>Vivek Shaw</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #333; }
-    
-    /* Header */
-    header { background: #0d6efd; color: #fff; padding: 20px 20px; position: sticky; top: 0; z-index: 1000; }
-    .nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
-    .logo { font-size: 1.8em; font-weight: bold; }
-    nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .cta-button { background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-left: 20px; }
-    
+
     /* Hero Section */
     .hero { 
-      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      height: 70vh; 
+      background: url('hero-image.jpg') no-repeat center center/cover; /* <-- Replace 'hero-image.jpg' with your image link */
+      height: 100vh; 
       display: flex; 
       flex-direction: column; 
       justify-content: center; 
@@ -26,52 +18,75 @@
       text-align: center; 
       color: #fff; 
       padding: 0 20px;
+      position: relative;
     }
+
+    /* Optional overlay for text visibility */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4); /* Dark overlay for text readability */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative; 
+      z-index: 2; 
+    }
+
     .hero h1 { font-size: 3em; margin: 0; text-shadow: 2px 2px 6px rgba(0,0,0,0.5);}
     .hero p { font-size: 1.2em; margin-top: 10px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);}
-    .hero a { margin-top: 20px; background: #28a745; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; }
-    
-    /* About Section */
-    section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
-    section h2 { font-size: 2em; color: #0d6efd; margin-bottom: 20px; text-align: center; }
-    section p { font-size: 1.1em; line-height: 1.6; text-align: center; }
-    
+    .hero a { margin-top: 20px; background: #28a745; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; }
+
+    /* About Me Section */
+    #about { max-width: 1000px; margin: 50px auto; padding: 0 20px; text-align: center; }
+    #about h2 { font-size: 2em; color: #0d6efd; margin-bottom: 20px; }
+    #about p { font-size: 1.1em; line-height: 1.6; }
+
+    <!-- About Me Section Ends Here -->
+
+    /* Contact Section */
+    #contact { max-width: 600px; margin: 50px auto; padding: 0 20px; text-align: center; }
+    #contact h2 { font-size: 2em; color: #0d6efd; margin-bottom: 20px; }
+    #contact a { background: #28a745; color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; }
+
     /* Footer */
     footer { background: #333; color: white; padding: 30px 20px; text-align: center; }
     footer a { color: #28a745; text-decoration: none; font-weight: bold; }
-    
-    /* Responsive */
+
+    /* Responsive Hero for Mobile */
     @media (max-width: 768px){
-      .nav-container { flex-direction: column; }
-      nav { margin-top: 10px; }
+      .hero {
+        background: url('hero-image-mobile.jpg') no-repeat center center/cover; /* Replace with mobile version */
+        height: 60vh;
+      }
+      .hero h1 { font-size: 2em; }
     }
   </style>
 </head>
 <body>
 
-<!-- Header -->
-<header>
-  <div class="nav-container">
-    <div class="logo">Vivek Shaw</div>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#case-studies">Case Studies</a>
-      <a href="mailto:vivekshaw@example.com" class="cta-button">Email Me</a>
-    </nav>
-  </div>
-</header>
-
 <!-- Hero Section -->
 <section class="hero">
-  <h1>Hello, I'm Vivek Shaw</h1>
-  <p>Digital Marketer & Web Enthusiast | Building Smart Solutions</p>
-  <a href="mailto:vivekshaw@example.com">Get in Touch</a>
+  <div class="hero-content">
+    <h1>Hello, I'm Vivek Shaw</h1>
+    <p>Digital Marketer & Web Enthusiast | Building Smart Solutions</p>
+    <a href="mailto:vivekshaw@example.com">Get in Touch</a>
+  </div>
 </section>
 
 <!-- About Me Section -->
 <section id="about">
   <h2>About Me</h2>
   <p>Hi! I'm Vivek Shaw, a passionate digital marketer and web enthusiast with 4+ years of experience helping businesses grow online. I specialize in performance marketing, web development, and creating innovative solutions that make an impact.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <a href="mailto:vivekshaw@example.com">Email Me</a>
 </section>
 
 <!-- Footer -->
