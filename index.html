@@ -9,18 +9,24 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
         }
         body {
             line-height: 1.6;
             color: #333;
         }
 
-        /* Hero Banner */
+        /* Hero Section */
         .hero {
             width: 100%;
             height: 100vh;
-            background: url('https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* full coverage, crop if needed */
         }
 
         /* About, Experience, Education, Achievements, Footer */
@@ -35,6 +41,7 @@
             margin-bottom: 20px;
             text-align: center;
         }
+
         p {
             margin-bottom: 15px;
         }
@@ -61,18 +68,18 @@
 
         /* Responsive for mobile */
         @media (max-width: 768px) {
-            .hero {
-                background: url('https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20-%20site%20phone.png') no-repeat center center;
-                background-size: contain;
-                height: auto;
+            h2 {
+                font-size: 1.6rem;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Banner -->
-    <section class="hero"></section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png" alt="Hero Image" id="hero-image">
+    </section>
 
     <!-- About Me -->
     <section class="about">
@@ -124,6 +131,21 @@
         <p>&copy; 2025 Vivek Shaw. All Rights Reserved.</p>
         <p>Email: vivekshaw@example.com | Phone: +91 1234567890</p>
     </footer>
+
+    <script>
+        // Change hero image for mobile devices
+        function updateHeroImage() {
+            const heroImg = document.getElementById('hero-image');
+            if(window.innerWidth <= 768){
+                heroImg.src = 'https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20-%20site%20phone.png'; // mobile image
+            } else {
+                heroImg.src = 'https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png'; // desktop image
+            }
+        }
+
+        window.addEventListener('load', updateHeroImage);
+        window.addEventListener('resize', updateHeroImage);
+    </script>
 
 </body>
 </html>
