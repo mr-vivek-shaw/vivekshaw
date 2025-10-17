@@ -1,55 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivek Shaw | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Shaw | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <picture>
-      <!-- Mobile Image -->
-      <source media="(max-width: 768px)" srcset="https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20-%20site%20phone.png">
-      <!-- Desktop Image -->
-      <img src="https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png" alt="Vivek Shaw Hero Banner">
-    </picture>
-  </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I’m a passionate Digital Marketer with 5+ years of experience in running successful digital campaigns, building brands, and growing online presence.</p>
-  </section>
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vivek Shaw</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Experience -->
-  <section class="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Digital Marketing Specialist</strong> – 2020–Present</li>
-      <li><strong>Freelance Consultant</strong> – 2018–2020</li>
-    </ul>
-  </section>
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Vivek Shaw</h1>
+            <p>Digital Marketing Professional | SEO | PPC | Social Media | Data Enthusiast</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+    </section>
 
-  <!-- Education -->
-  <section class="education">
-    <h2>Education</h2>
-    <p>Currently pursuing MCA | Bachelor in Computer Applications</p>
-  </section>
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Vivek, a passionate Digital Marketing and Data Science professional. I specialize in SEO, PPC, social media marketing, content creation, lead generation, and data-driven strategies. I love to create impactful campaigns and optimize user engagement using analytics and creativity.</p>
+        </div>
+    </section>
 
-  <!-- Achievements -->
-  <section class="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Generated 200% ROI on multiple ad campaigns</li>
-      <li>Worked with 20+ global clients in brand strategy</li>
-    </ul>
-  </section>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">SEO</div>
+                <div class="skill">PPC Campaigns</div>
+                <div class="skill">Social Media Marketing</div>
+                <div class="skill">Content Marketing</div>
+                <div class="skill">Lead Generation</div>
+                <div class="skill">Google Analytics</div>
+                <div class="skill">WordPress</div>
+                <div class="skill">Data Analysis</div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Vivek Shaw | All Rights Reserved</p>
-  </footer>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>SEO Audit & Optimization for a client website, increasing organic traffic by 60%.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Managed PPC campaigns with ROI improvement of 3x for e-commerce client.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Social Media Marketing for a brand, boosting engagement by 120% in 3 months.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vivek Shaw. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
