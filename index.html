@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Shaw | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Shaw | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+<script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Vivek Shaw</div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </nav>
-    </header>
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Vivek Shaw</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="theme-toggle">🌙</div>
+  </nav>
+</header>
 
-    <!-- ===== HERO ===== -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Vivek Shaw</h1>
-            <p>Digital Marketing Professional | SEO | PPC | Social Media | Data Enthusiast</p>
-            <a href="#contact" class="btn">Let's Connect</a>
-        </div>
-    </section>
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="typing"></span></h1>
+    <p>Digital Marketing Professional & Data Enthusiast</p>
+    <a href="#contact" class="btn">Connect with Me</a>
+  </div>
+  <div class="hero-bg"></div>
+</section>
 
-    <!-- ===== ABOUT ===== -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Vivek, a passionate Digital Marketing and Data Science professional. I specialize in SEO, PPC, social media marketing, content creation, lead generation, and data-driven strategies. I love to create impactful campaigns and optimize user engagement using analytics and creativity.</p>
-        </div>
-    </section>
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container fade-in">
+    <h2>About Me</h2>
+    <p>Hello! I'm Vivek Shaw, a creative Digital Marketing professional and Data Science enthusiast. I specialize in SEO, PPC, social media marketing, and lead generation. I love crafting campaigns that make an impact and using analytics to optimize growth.</p>
+  </div>
+</section>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">SEO</div>
-                <div class="skill">PPC Campaigns</div>
-                <div class="skill">Social Media Marketing</div>
-                <div class="skill">Content Marketing</div>
-                <div class="skill">Lead Generation</div>
-                <div class="skill">Google Analytics</div>
-                <div class="skill">WordPress</div>
-                <div class="skill">Data Analysis</div>
-            </div>
-        </div>
-    </section>
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container fade-in">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="circle" data-percent="95"><span>SEO</span></div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percent="90"><span>PPC</span></div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percent="85"><span>Social Media</span></div>
+      </div>
+      <div class="skill">
+        <div class="circle" data-percent="80"><span>Analytics</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>SEO Audit & Optimization for a client website, increasing organic traffic by 60%.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Managed PPC campaigns with ROI improvement of 3x for e-commerce client.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Social Media Marketing for a brand, boosting engagement by 120% in 3 months.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+        <h3>SEO Optimization</h3>
+        <p>Boosted client website traffic by 60% through technical and content SEO strategies.</p>
+      </div>
+      <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+        <h3>PPC Campaigns</h3>
+        <p>Managed Google Ads with ROI improvement of 3x in 6 months.</p>
+      </div>
+      <div class="project-card" data-tilt data-tilt-max="15" data-tilt-speed="400">
+        <h3>Social Media</h3>
+        <p>Increased engagement by 120% across platforms through creative campaigns.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container fade-in">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Vivek Shaw. All Rights Reserved.</p>
-    </footer>
+<footer>
+  <p>&copy; 2025 Vivek Shaw. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
