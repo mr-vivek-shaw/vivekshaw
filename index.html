@@ -1,151 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek Shaw Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        /* Hero Section */
-        .hero {
-            width: 100%;
-            height: 100vh;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* full coverage, crop if needed */
-        }
-
-        /* About, Experience, Education, Achievements, Footer */
-        section, footer {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        .card {
-            background: #f7f7f7;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .achievements ul {
-            list-style: disc inside;
-        }
-
-        footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-        }
-        footer p {
-            margin: 10px 0;
-        }
-
-        /* Responsive for mobile */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 1.6rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivek Shaw | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <picture>
+      <!-- Mobile Image -->
+      <source media="(max-width: 768px)" srcset="hero-mobile.png">
+      <!-- Desktop Image -->
+      <img src="hero-desktop.jpg" alt="Vivek Shaw Hero Banner">
+    </picture>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png" alt="Hero Image" id="hero-image">
-    </section>
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate Digital Marketer with 5+ years of experience in running successful digital campaigns, building brands, and growing online presence.</p>
+  </section>
 
-    <!-- About Me -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et diam nec nulla bibendum gravida.</p>
-        <p>Passionate about learning web development and building interactive, responsive websites.</p>
-    </section>
+  <!-- Experience -->
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Digital Marketing Specialist</strong> – 2020–Present</li>
+      <li><strong>Freelance Consultant</strong> – 2018–2020</li>
+    </ul>
+  </section>
 
-    <!-- Experience -->
-    <section class="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Digital Marketing Specialist</h3>
-            <p>ABC Marketing Pvt. Ltd | 2021 - 2025</p>
-            <p>Handled Google Ads, Social Media Campaigns, SEO & Analytics.</p>
-        </div>
-        <div class="card">
-            <h3>Freelance Digital Marketer</h3>
-            <p>Self-Employed | 2019 - 2021</p>
-            <p>Managed multiple clients, created marketing strategies, and optimized campaigns for better ROI.</p>
-        </div>
-    </section>
+  <!-- Education -->
+  <section class="education">
+    <h2>Education</h2>
+    <p>Currently pursuing MCA | Bachelor in Computer Applications</p>
+  </section>
 
-    <!-- Education -->
-    <section class="education">
-        <h2>Education</h2>
-        <div class="card">
-            <h3>MCA (Master of Computer Applications)</h3>
-            <p>XYZ University | 2024 - Present</p>
-        </div>
-        <div class="card">
-            <h3>Bachelor of Commerce</h3>
-            <p>ABC College | 2017 - 2020</p>
-        </div>
-    </section>
+  <!-- Achievements -->
+  <section class="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Generated 200% ROI on multiple ad campaigns</li>
+      <li>Worked with 20+ global clients in brand strategy</li>
+    </ul>
+  </section>
 
-    <!-- Achievements -->
-    <section class="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Certified Google Ads Professional</li>
-            <li>Managed campaigns worth $50,000+</li>
-            <li>Top performer in multiple digital marketing projects</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Vivek Shaw. All Rights Reserved.</p>
-        <p>Email: vivekshaw@example.com | Phone: +91 1234567890</p>
-    </footer>
-
-    <script>
-        // Change hero image for mobile devices
-        function updateHeroImage() {
-            const heroImg = document.getElementById('hero-image');
-            if(window.innerWidth <= 768){
-                heroImg.src = 'https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20-%20site%20phone.png'; // mobile image
-            } else {
-                heroImg.src = 'https://raw.githubusercontent.com/mr-vivek-shaw/vivekshaw/refs/heads/main/vivek%20site%20-%20desktop.png'; // desktop image
-            }
-        }
-
-        window.addEventListener('load', updateHeroImage);
-        window.addEventListener('resize', updateHeroImage);
-    </script>
-
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vivek Shaw | All Rights Reserved</p>
+  </footer>
 </body>
 </html>
