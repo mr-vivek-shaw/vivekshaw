@@ -1,43 +1,120 @@
-/* Hero Section */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+  background-color: #f9fafb;
+}
+
+/* ===== HERO SECTION ===== */
 .hero {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
   padding: 40px 20px;
+  overflow: hidden;
+  text-align: center;
 }
 
-.hero picture,
 .hero img {
   width: 100%;
+  max-width: 600px;
   height: auto;
-  max-width: 600px; /* Keeps image nicely sized on large screens */
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
   object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .hero img {
-    max-width: 500px;
-  }
+.hero img:hover {
+  transform: scale(1.03);
 }
 
+/* ===== SECTION STYLES ===== */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(even) {
+  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f97316; /* orange accent line */
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: 20px;
+    padding: 40px 20px;
   }
 
   .hero img {
-    width: 100%;
     max-width: 100%;
-    height: auto;
-    object-fit: contain;
+  }
+
+  section {
+    margin-bottom: 30px;
+    padding: 60px 15px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
   }
 }
