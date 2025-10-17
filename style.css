@@ -41,9 +41,9 @@ body {
 
 /* ===== SECTION STYLES ===== */
 section {
-  padding: 20px 20px;
+  padding: 1px 20px;
   max-width: 1000px;
-  margin: 60px auto;
+  margin: 20px auto;
   text-align: center;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
@@ -111,8 +111,8 @@ footer p {
   }
 
   section {
-    margin: 30px auto;
-    padding: 60px 15px;
+    margin: 10px auto;
+    padding: 1px 15px;
   }
 
   section h2 {
