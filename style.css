@@ -9,7 +9,7 @@
 body {
   color: #333;
   line-height: 1.6;
-  background-color: #f9fafb;
+  background: #ffffff;
 }
 
 /* ===== HERO SECTION ===== */
@@ -43,16 +43,17 @@ body {
 section {
   padding: 80px 20px;
   max-width: 1000px;
-  margin: auto;
+  margin: 60px auto;
   text-align: center;
-  background: #fff;
-  margin-bottom: 50px;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 50%, #eef2f7 100%);
+  transition: background 0.3s ease;
 }
 
+/* Slightly different fade for alternating sections */
 section:nth-of-type(even) {
-  background: linear-gradient(135deg, #f8fafc, #eef2f7);
+  background: linear-gradient(to bottom, #f8fafc 0%, #f1f5f9 60%, #ffffff 100%);
 }
 
 section h2 {
@@ -67,7 +68,7 @@ section h2::after {
   display: block;
   width: 60px;
   height: 3px;
-  background: #f97316; /* orange accent line */
+  background: #f97316; /* orange accent */
   margin: 10px auto 0;
   border-radius: 3px;
 }
@@ -87,7 +88,7 @@ ul {
 
 /* ===== FOOTER ===== */
 footer {
-  background: #111827;
+  background: linear-gradient(to top, #111827, #1e293b);
   color: #fff;
   text-align: center;
   padding: 30px 20px;
@@ -110,7 +111,7 @@ footer p {
   }
 
   section {
-    margin-bottom: 30px;
+    margin: 30px auto;
     padding: 60px 15px;
   }
 
